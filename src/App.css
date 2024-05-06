@@ -10,11 +10,15 @@
   font-family: "Chivo", sans-serif !important;
 }
 :root {
+  --fs-xxm:14px;
   --fs-xm: 16px;
   --fs-sm: 18px;
   --fs-md: 24px;
   --fs-lg: 52px;
   --fs-xl: 80px;
+}
+.fs_xxm {
+  font-size: var(--fs-xxm);
 }
 .fs_xm {
   font-size: var(--fs-xm);
@@ -34,6 +38,9 @@
 body {
   background-color: #080705 !important;
 }
+.container{
+  max-width: 1164px !important;
+}
 .fw_ExtraBold {
   font-weight: 800;
 }
@@ -45,13 +52,6 @@ body {
 }
 p {
   margin-bottom: 0 !important;
-}
-
-.lubricants_img {
-  background-image: url(../src/assets/image/lubricants_img.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 893px;
 }
 .max_w {
   max-width: 556px;
@@ -87,77 +87,318 @@ p {
 }
 /* Approvals */
 .approval_bg {
-  background-color: #0A6DAD;
+  background-color: #0a6dad;
   padding: 3px 12px 3px 9px;
   transform: skewX(-17deg) !important;
   display: inline-block;
 }
-.pt_top{
+.pt_top {
   padding-top: 205px;
 }
-
-.approval_img{
+.approval_img {
   position: absolute;
   max-width: 956px;
   z-index: -1;
 }
-.blue_ellipse{
-  max-width: 542px;
+.blue_ellipse {
+  max-width: 642px;
   min-height: 630px;
   position: absolute;
-  right: 8%;
+  right: 3%;
   top: -27%;
 }
 .py_spacing1 {
   padding: 58px 0px 43px 0px;
 }
 /* Number */
-.img_1{
+.img_1 {
   position: absolute;
   top: 2%;
   left: 30%;
   max-width: 112px;
 }
-.img_2{
+.img_2 {
   position: absolute;
   top: 23%;
   left: 10%;
   max-width: 112px;
 }
-.img_3{
+.img_3 {
   position: absolute;
   top: 23%;
   left: 27%;
   max-width: 112px;
 }
-.img_4{
+.img_4 {
   position: absolute;
   top: 33%;
   left: 42%;
   max-width: 112px;
 }
-.img_5{
+.img_5 {
   position: absolute;
   top: 11%;
   left: 50%;
   max-width: 112px;
 }
-.img_6{
+.img_6 {
   position: absolute;
   top: 27%;
   right: 27%;
   max-width: 112px;
 }
-.img_7{
+.img_7 {
   position: absolute;
   top: 10%;
   right: 20%;
   max-width: 112px;
 }
+.text_position {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+.max_ww {
+  max-width: 204px;
+}
+.gap_space {
+  gap: 140px;
+}
+.text_hover{
+  color: white;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.text_hover:hover {
+transition: all 300ms linear;
+  color: #B91C20 !important; 
+  cursor: pointer;
+}
+.bg_section{
+  background-image: url(../src/assets/image/bg_section.webp);
+  background-repeat: no-repeat
+  ;
+  background-size: cover;
+}
+.pt-space{
+  padding-top: 131px;
+}
+.max-card{
+  max-width: 364px;
+}
+.pb_spacing{
+  padding-bottom: 157px;
+}
+.btn_date{
+  background: #B91C20;
+  padding: 12px;
+  border: none;
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  }
+.pb_bottom{
+  padding-bottom: 260px;
+}
+@media (min-width:768px) {
+  .lubricants_img {
+    background-image: url(../src/assets/image/lubricants_img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 893px;
+  } 
+}
 @media (max-width: 1400px) {
   .gold_ellipse {
-    max-width: 600px;
+    max-width: 480px;
     left: -4%;
     top: 12%;
   }
+  .text_position {
+   position: unset;
+  }
+  .gap_space {
+    gap: 120px;
+  }
 }
+@media (max-width:1200px) {
+  .blue_ellipse {
+    max-width: 495px;
+    min-height: 630px;
+    position: absolute;
+    right: 1%;
+    top: -27%;
+  }
+  .gold_ellipse {
+    max-width: 272px;
+    left: -4%;
+    top: 40%;
+  }
+  .gap_space {
+    gap: 80px;
+  }
+  :root {
+     --fs-xl: 60px;
+  }
+}
+@media (max-width:992px) {
+  .blue_ellipse {
+    max-width: 340px;
+    min-height: 407px;
+    position: absolute;
+    right: -5%;
+    top: -27%;
+  }
+  .overflow_hidden{
+    overflow: hidden;
+  }
+  :root {
+    --fs-xxm:14px;
+    --fs-xm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 24px;
+    --fs-lg: 32px;
+    --fs-xl: 50px;
+  }
+  .pb_bottom{
+    padding-bottom: 170px;
+  }
+}
+@media (max-width:769.1px) {
+  .max_w {
+    max-width: 100%;
+  }
+  .pb_bottom{
+    padding-bottom: 120px;
+  }
+  .pt_top {
+    padding-top: 65px;
+  }
+  .approval_img {
+background: white;
+  }
+  .lubricants_img {
+background: #ffff
+;
+padding:20px 14px 20px 14px;
+  }
+  .max_ww {
+    max-width: 404px;
+  }
+  :root {
+    --fs-xxm:14px;
+    --fs-xm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 17px;
+    --fs-lg: 20px;
+    --fs-xl: 30px;
+  }
+  .img_1 {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    max-width: 65px;
+  }
+  .img_2 {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    max-width: 65px;
+  }
+  .img_3 {
+    position: absolute;
+    top: 23%;
+    left: 27%;
+    max-width: 65px;
+  }
+  .img_4 {
+    position: absolute;
+    top: 33%;
+    left: 42%;
+    max-width: 65px;
+  }
+  .img_5 {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    max-width: 65px;
+  }
+  .img_6 {
+    position: absolute;
+    top: 27%;
+    right: 27%;
+    max-width: 65px;
+  }
+  .img_7 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    max-width: 65px;
+  }
+}
+@media (max-width:576px) {
+  .pt_top {
+    padding-top: 24px;
+  }
+  .img_1 {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    max-width: 42px;
+  }
+  .img_2 {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    max-width:42px;
+  }
+  .img_3 {
+    position: absolute;
+    top: 13%;
+    left: 27%;
+    max-width: 42px;
+  }
+  .img_4 {
+    position: absolute;
+    top: 16%;
+    left: 42%;
+    max-width: 42px;
+  }
+  .img_5 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    max-width: 42px;
+  }
+  .img_6 {
+    position: absolute;
+    top: 20%;
+    right: 27%;
+    max-width: 42px;
+  }
+  .img_7 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    max-width: 42px;
+  }
+  .py_spacing {
+    padding: 24px 0px 24px 0px;
+  }
+  .py_spacing1 {
+    padding: 24px 0px 24px 0px;
+  }
+  .pb_spacing{
+    padding-bottom: 0px;
+  }
+  .pt-space{
+    padding-top: 24px;
+  }
+  .gap_space {
+    gap: 40px;
+  }
+  .pb_bottom{
+    padding-bottom: 35px;
+  }
+}
+
