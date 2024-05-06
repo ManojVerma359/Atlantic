@@ -207,6 +207,9 @@ transition: all 300ms linear;
     background-repeat: no-repeat;
     width: 893px;
   } 
+  .pb_spacing{
+    padding-bottom: 110px;
+  }
 }
 @media (max-width: 1400px) {
   .gold_ellipse {
@@ -229,6 +232,9 @@ transition: all 300ms linear;
     right: 1%;
     top: -27%;
   }
+  .pt-space{
+    padding-top: 20px;
+  }
   .gold_ellipse {
     max-width: 272px;
     left: -4%;
@@ -239,6 +245,9 @@ transition: all 300ms linear;
   }
   :root {
      --fs-xl: 60px;
+  }
+  .pb_spacing{
+    padding-bottom: 80px;
   }
 }
 @media (max-width:992px) {
@@ -262,6 +271,9 @@ transition: all 300ms linear;
   }
   .pb_bottom{
     padding-bottom: 170px;
+  }
+  .pb_spacing{
+    padding-bottom: 40px;
   }
 }
 @media (max-width:769.1px) {
